@@ -1,0 +1,32 @@
+from tkinter import *
+root = Tk()
+root.title("Fever Report")
+root.geometry("400x400")
+
+question1_radioButton = StringVar(value="0")
+
+question1 = Label(root, text = "Do you have a headache or sore throat?")
+question1.pack()
+question1Option1 = Radiobuttion(root, text = "Yes", variable= question1_radioButton, value = "yes")
+question1Option1.pack()
+question1Option2 = Radiobuttion(root, text = "no", variable= question1_radioButton, value = "no")
+question1Option2.pack()
+
+question2_radioButton = StringVar(value="0")
+question2 = Label(root, text = "Do you have a headache or sore throat?")
+question2.pack()
+question2Option1 = Radiobutton(root, text = "Yes", variable= question1_radioButton, value = "yes")
+question2Option1.pack()
+question2Option2 = Radiobutton(root, text = "no", variable= question1_radioButton, value = "no")
+question2Option2.pack()
+
+question3_radioButton = StringVar(value="0")
+question3 = Label(root, text = "Do you have a headache or sore throat?")
+question3.pack()
+question3Option1 = Radiobutton(root, text = "Yes", variable= question1_radioButton, value = "yes")
+question3Option1.pack()
+question3Option2 = Radiobutton(root, text = "no", variable= question1_radioButton, value = "no")
+question3Option2.pack()
+
+root.mainloop()
+
